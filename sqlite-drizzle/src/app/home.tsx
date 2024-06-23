@@ -14,7 +14,7 @@ export default function Home() {
   const [data, setData] = useState<Data[] | null>([])
 
   return (
-    <View className="flex-1 gap-6 p-8 mt-10 ">
+    <View className="flex-1 gap-6 p-8 mt-5 bg-zinc-950 ">
 
       <TextInput
         className="py-3 px-4 border border-zinc-800 rounded text-lg 
