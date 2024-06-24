@@ -1,7 +1,7 @@
 import '@/styles/global.css'
 
 import { StatusBar } from 'expo-status-bar';
-import { View, Text, ActivityIndicator } from 'react-native';
+import { Text, ActivityIndicator } from 'react-native';
 import Home from '@/app/home';
 
 import { drizzle } from "drizzle-orm/expo-sqlite";
@@ -31,9 +31,9 @@ export default function App() {
   return (
     <>
 
-      <StatusBar style="light" backgroundColor='black' translucent />
-
       <SQLiteProvider databaseName={DATABASE_NAME}>
+        <StatusBar style="light" backgroundColor='black' translucent />
+
         <Home />
       </SQLiteProvider>
     </>
